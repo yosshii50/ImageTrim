@@ -38,6 +38,17 @@ Public Class Form1
     End Sub
     Public Sub BtnGo_Exec()
 
+        Dim WrkRotation As Integer
+        If RbtR090.Checked = True Then
+            WrkRotation = 90
+        ElseIf RbtR180.Checked = True Then
+            WrkRotation = 180
+        ElseIf RbtR270.Checked = True Then
+            WrkRotation = 270
+        Else
+            WrkRotation = 0
+        End If
+
         On Error Resume Next
         Dim WrkFileList As String() = System.IO.Directory.GetFiles(FolderPathNameSRC.Text, TxtSearchPattern.Text)
         On Error GoTo 0
@@ -51,7 +62,7 @@ Public Class Form1
             Dim WrkFilePathName As String
             WrkFilePathName = FolderPathNameDST.Text & "\" & TxtAddNM.Text & WrkFileName & ".jpg"
 
-            FileLoadTrimSave.LoadTrimSave(WrkStr, WrkFilePathName, CInt(Txtx.Text), CInt(Txty.Text), CInt(Txtwidth.Text), CInt(Txtheight.Text))
+            FileLoadTrimSave.LoadTrimSave(WrkStr, WrkFilePathName, CInt(Txtx.Text), CInt(Txty.Text), CInt(Txtwidth.Text), CInt(Txtheight.Text), WrkRotation)
 
             WrkCnt = WrkCnt + 1
             LblMsg.Text = WrkStr & vbCrLf _

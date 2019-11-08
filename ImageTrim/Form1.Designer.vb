@@ -42,6 +42,12 @@ Partial Class Form1
         Me.TxtSearchPattern = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TxtAddNM = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.RbtR000 = New System.Windows.Forms.RadioButton()
+        Me.RbtR090 = New System.Windows.Forms.RadioButton()
+        Me.RbtR180 = New System.Windows.Forms.RadioButton()
+        Me.RbtR270 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'BtnGo
@@ -174,7 +180,7 @@ Partial Class Form1
         'LblMsg
         '
         Me.LblMsg.AutoSize = True
-        Me.LblMsg.Location = New System.Drawing.Point(149, 113)
+        Me.LblMsg.Location = New System.Drawing.Point(128, 131)
         Me.LblMsg.Name = "LblMsg"
         Me.LblMsg.Size = New System.Drawing.Size(26, 12)
         Me.LblMsg.TabIndex = 19
@@ -214,11 +220,67 @@ Partial Class Form1
         Me.TxtAddNM.TabIndex = 22
         Me.TxtAddNM.Text = "Conv_"
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.RbtR270)
+        Me.GroupBox1.Controls.Add(Me.RbtR180)
+        Me.GroupBox1.Controls.Add(Me.RbtR090)
+        Me.GroupBox1.Controls.Add(Me.RbtR000)
+        Me.GroupBox1.Location = New System.Drawing.Point(160, 83)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(230, 42)
+        Me.GroupBox1.TabIndex = 24
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Rotation"
+        '
+        'RbtR000
+        '
+        Me.RbtR000.AutoSize = True
+        Me.RbtR000.Checked = True
+        Me.RbtR000.Location = New System.Drawing.Point(6, 18)
+        Me.RbtR000.Name = "RbtR000"
+        Me.RbtR000.Size = New System.Drawing.Size(49, 16)
+        Me.RbtR000.TabIndex = 0
+        Me.RbtR000.TabStop = True
+        Me.RbtR000.Text = "None"
+        Me.RbtR000.UseVisualStyleBackColor = True
+        '
+        'RbtR090
+        '
+        Me.RbtR090.AutoSize = True
+        Me.RbtR090.Location = New System.Drawing.Point(61, 18)
+        Me.RbtR090.Name = "RbtR090"
+        Me.RbtR090.Size = New System.Drawing.Size(47, 16)
+        Me.RbtR090.TabIndex = 1
+        Me.RbtR090.Text = "90°"
+        Me.RbtR090.UseVisualStyleBackColor = True
+        '
+        'RbtR180
+        '
+        Me.RbtR180.AutoSize = True
+        Me.RbtR180.Location = New System.Drawing.Point(114, 18)
+        Me.RbtR180.Name = "RbtR180"
+        Me.RbtR180.Size = New System.Drawing.Size(53, 16)
+        Me.RbtR180.TabIndex = 2
+        Me.RbtR180.Text = "180°"
+        Me.RbtR180.UseVisualStyleBackColor = True
+        '
+        'RbtR270
+        '
+        Me.RbtR270.AutoSize = True
+        Me.RbtR270.Location = New System.Drawing.Point(173, 18)
+        Me.RbtR270.Name = "RbtR270"
+        Me.RbtR270.Size = New System.Drawing.Size(53, 16)
+        Me.RbtR270.TabIndex = 3
+        Me.RbtR270.Text = "270°"
+        Me.RbtR270.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(552, 227)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.TxtAddNM)
         Me.Controls.Add(Me.Label7)
@@ -241,6 +303,8 @@ Partial Class Form1
         Me.Controls.Add(Me.BtnGo)
         Me.Name = "Form1"
         Me.Text = "ImageTrim"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -265,5 +329,10 @@ Partial Class Form1
     Friend WithEvents TxtSearchPattern As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents TxtAddNM As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents RbtR270 As System.Windows.Forms.RadioButton
+    Friend WithEvents RbtR180 As System.Windows.Forms.RadioButton
+    Friend WithEvents RbtR090 As System.Windows.Forms.RadioButton
+    Friend WithEvents RbtR000 As System.Windows.Forms.RadioButton
 
 End Class

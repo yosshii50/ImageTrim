@@ -1,7 +1,7 @@
 ﻿Public Module FileLoadTrimSave
 
     'ファイルからトリミングして保存
-    Public Sub LoadTrimSave(ByVal SrcFileName As String, ByVal DstFileName As String, ByVal x As Integer, ByVal y As Integer, ByVal width As Integer, ByVal height As Integer)
+    Public Sub LoadTrimSave(ByVal SrcFileName As String, ByVal DstFileName As String, ByVal x As Integer, ByVal y As Integer, ByVal width As Integer, ByVal height As Integer, ByVal WrkRotation As Integer)
 
         ''画像ファイルを読み込んで、Imageオブジェクトとして取得する
         Dim WrkImage As System.Drawing.Image = System.Drawing.Image.FromFile(SrcFileName)
@@ -19,6 +19,16 @@
 
         'BITMAPにImageを描画
         DrawOnBITMAP(WrkBitmap, WrkImage, x, y)
+
+        '回転実行
+        Select Case WrkRotation
+            Case 90
+                WrkBitmap.RotateFlip(RotateFlipType.Rotate90FlipNone)
+            Case 180
+                WrkBitmap.RotateFlip(RotateFlipType.Rotate180FlipNone)
+            Case 270
+                WrkBitmap.RotateFlip(RotateFlipType.Rotate270FlipNone)
+        End Select
 
         'ファイルに保存
         SaveJPGFile.SaveBitmap(WrkBitmap, DstFileName)
