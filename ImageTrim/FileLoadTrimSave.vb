@@ -6,6 +6,14 @@
         ''画像ファイルを読み込んで、Imageオブジェクトとして取得する
         Dim WrkImage As System.Drawing.Image = System.Drawing.Image.FromFile(SrcFileName)
 
+        '幅/高さが指定されてない場合、変更しない
+        If width = 0 Then
+            width = WrkImage.Width - x
+        End If
+        If height = 0 Then
+            height = WrkImage.Height - y
+        End If
+
         '描画先とするImageオブジェクトを作成する
         Dim WrkBitmap As New System.Drawing.Bitmap(width, height)
 
@@ -15,13 +23,14 @@
         'ファイルに保存
         SaveJPGFile.SaveBitmap(WrkBitmap, DstFileName)
 
-        'Imageオブジェクトのリソースを解放する
+        'リソース解放
         WrkImage.Dispose()
+        WrkBitmap.Dispose()
 
     End Sub
 
     'BITMAPにImageを描画
-    Private Sub DrawOnBITMAP(ByVal WrkBitmap As System.Drawing.Bitmap, ByVal WrkImage As System.Drawing.Image, ByVal x As Integer, ByVal y As Integer)
+    Private Sub DrawOnBITMAP(ByRef WrkBitmap As System.Drawing.Bitmap, ByRef WrkImage As System.Drawing.Image, ByVal x As Integer, ByVal y As Integer)
 
         Dim WrkGraphics As System.Drawing.Graphics = System.Drawing.Graphics.FromImage(WrkBitmap)
 
