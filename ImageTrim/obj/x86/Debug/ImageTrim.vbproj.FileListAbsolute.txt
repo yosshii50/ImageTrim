@@ -1,0 +1,9 @@
+C:\Users\yagi_yo\Documents\GitHub\ImageTrim\ImageTrim\bin\Debug\ImageTrim.exe
+C:\Users\yagi_yo\Documents\GitHub\ImageTrim\ImageTrim\bin\Debug\ImageTrim.pdb
+C:\Users\yagi_yo\Documents\GitHub\ImageTrim\ImageTrim\bin\Debug\ImageTrim.xml
+C:\Users\yagi_yo\Documents\GitHub\ImageTrim\ImageTrim\obj\x86\Debug\ImageTrim.Form1.resources
+C:\Users\yagi_yo\Documents\GitHub\ImageTrim\ImageTrim\obj\x86\Debug\ImageTrim.Resources.resources
+C:\Users\yagi_yo\Documents\GitHub\ImageTrim\ImageTrim\obj\x86\Debug\ImageTrim.vbproj.GenerateResource.Cache
+C:\Users\yagi_yo\Documents\GitHub\ImageTrim\ImageTrim\obj\x86\Debug\ImageTrim.exe
+C:\Users\yagi_yo\Documents\GitHub\ImageTrim\ImageTrim\obj\x86\Debug\ImageTrim.xml
+C:\Users\yagi_yo\Documents\GitHub\ImageTrim\ImageTrim\obj\x86\Debug\ImageTrim.pdb
