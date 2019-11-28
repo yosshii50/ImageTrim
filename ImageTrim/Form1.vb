@@ -62,7 +62,7 @@ Public Class Form1
             Dim WrkFilePathName As String
             WrkFilePathName = FolderPathNameDST.Text & "\" & TxtAddNM.Text & WrkFileName & ".jpg"
 
-            FileLoadTrimSave.LoadTrimSave(WrkStr, WrkFilePathName, CInt(Txtx.Text), CInt(Txty.Text), CInt(Txtwidth.Text), CInt(Txtheight.Text), WrkRotation)
+            FileLoadTrimSave.LoadTrimSave(WrkStr, WrkFilePathName, GInt(Txtx1.Text), GInt(Txty1.Text), GInt(Txtwidth.Text), GInt(Txtheight.Text), WrkRotation)
 
             WrkCnt = WrkCnt + 1
             LblMsg.Text = WrkStr & vbCrLf _
@@ -73,5 +73,41 @@ Public Class Form1
         Next
 
     End Sub
+
+    Private Sub Txtx1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txtx1.TextChanged
+        Call Txtwidth_Calc()
+    End Sub
+    Private Sub Txtx2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txtx2.TextChanged
+        Call Txtwidth_Calc()
+    End Sub
+    Private Sub Txtwidth_Calc()
+        Txtwidth.Text = GInt(Txtx2.Text) - GInt(Txtx1.Text)
+    End Sub
+
+    Private Sub Txty1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txty1.TextChanged
+        Call Txtheight_Calc()
+    End Sub
+    Private Sub Txty2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txty2.TextChanged
+        Call Txtheight_Calc()
+    End Sub
+    Private Sub Txtheight_Calc()
+        Txtheight.Text = GInt(Txty2.Text) - GInt(Txty1.Text)
+    End Sub
+
+    Private Sub Txtwidth_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txtwidth.TextChanged
+        Txtx2.Text = GInt(Txtwidth.Text) + GInt(Txtx1.Text)
+    End Sub
+
+    Private Sub Txtheight_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txtheight.TextChanged
+        Txty2.Text = GInt(Txtheight.Text) + GInt(Txty1.Text)
+    End Sub
+
+    Private Function GInt(ByVal WrkStr As String) As Integer
+        If WrkStr = "" Then
+            Return 0
+        Else
+            Return CInt(WrkStr)
+        End If
+    End Function
 
 End Class

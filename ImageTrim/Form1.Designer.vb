@@ -27,10 +27,10 @@ Partial Class Form1
         Me.BtnSelectSRC = New System.Windows.Forms.Button()
         Me.FolderPathNameDST = New System.Windows.Forms.TextBox()
         Me.BtnSelectDST = New System.Windows.Forms.Button()
-        Me.Txty = New System.Windows.Forms.TextBox()
+        Me.Txty1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Txtx = New System.Windows.Forms.TextBox()
+        Me.Txtx1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Txtheight = New System.Windows.Forms.TextBox()
@@ -43,19 +43,25 @@ Partial Class Form1
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TxtAddNM = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RbtR000 = New System.Windows.Forms.RadioButton()
-        Me.RbtR090 = New System.Windows.Forms.RadioButton()
-        Me.RbtR180 = New System.Windows.Forms.RadioButton()
         Me.RbtR270 = New System.Windows.Forms.RadioButton()
+        Me.RbtR180 = New System.Windows.Forms.RadioButton()
+        Me.RbtR090 = New System.Windows.Forms.RadioButton()
+        Me.RbtR000 = New System.Windows.Forms.RadioButton()
+        Me.Txty2 = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Txtx2 = New System.Windows.Forms.TextBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'BtnGo
         '
-        Me.BtnGo.Location = New System.Drawing.Point(419, 169)
+        Me.BtnGo.Location = New System.Drawing.Point(408, 122)
         Me.BtnGo.Name = "BtnGo"
         Me.BtnGo.Size = New System.Drawing.Size(121, 42)
-        Me.BtnGo.TabIndex = 0
+        Me.BtnGo.TabIndex = 13
         Me.BtnGo.Text = "Go"
         Me.BtnGo.UseVisualStyleBackColor = True
         '
@@ -64,14 +70,14 @@ Partial Class Form1
         Me.FolderPathNameSRC.Location = New System.Drawing.Point(59, 6)
         Me.FolderPathNameSRC.Name = "FolderPathNameSRC"
         Me.FolderPathNameSRC.Size = New System.Drawing.Size(410, 19)
-        Me.FolderPathNameSRC.TabIndex = 6
+        Me.FolderPathNameSRC.TabIndex = 0
         '
         'BtnSelectSRC
         '
         Me.BtnSelectSRC.Location = New System.Drawing.Point(475, 6)
         Me.BtnSelectSRC.Name = "BtnSelectSRC"
         Me.BtnSelectSRC.Size = New System.Drawing.Size(66, 19)
-        Me.BtnSelectSRC.TabIndex = 5
+        Me.BtnSelectSRC.TabIndex = 1
         Me.BtnSelectSRC.Text = "Select"
         Me.BtnSelectSRC.UseVisualStyleBackColor = True
         '
@@ -80,50 +86,50 @@ Partial Class Form1
         Me.FolderPathNameDST.Location = New System.Drawing.Point(59, 56)
         Me.FolderPathNameDST.Name = "FolderPathNameDST"
         Me.FolderPathNameDST.Size = New System.Drawing.Size(410, 19)
-        Me.FolderPathNameDST.TabIndex = 8
+        Me.FolderPathNameDST.TabIndex = 3
         '
         'BtnSelectDST
         '
         Me.BtnSelectDST.Location = New System.Drawing.Point(475, 56)
         Me.BtnSelectDST.Name = "BtnSelectDST"
         Me.BtnSelectDST.Size = New System.Drawing.Size(66, 19)
-        Me.BtnSelectDST.TabIndex = 7
+        Me.BtnSelectDST.TabIndex = 4
         Me.BtnSelectDST.Text = "Select"
         Me.BtnSelectDST.UseVisualStyleBackColor = True
         '
-        'Txty
+        'Txty1
         '
-        Me.Txty.Location = New System.Drawing.Point(59, 131)
-        Me.Txty.Name = "Txty"
-        Me.Txty.Size = New System.Drawing.Size(51, 19)
-        Me.Txty.TabIndex = 12
-        Me.Txty.Text = "0"
+        Me.Txty1.Location = New System.Drawing.Point(33, 43)
+        Me.Txty1.Name = "Txty1"
+        Me.Txty1.Size = New System.Drawing.Size(51, 19)
+        Me.Txty1.TabIndex = 7
+        Me.Txty1.Text = "0"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 134)
+        Me.Label2.Location = New System.Drawing.Point(10, 46)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(11, 12)
+        Me.Label2.Size = New System.Drawing.Size(17, 12)
         Me.Label2.TabIndex = 11
-        Me.Label2.Text = "y"
+        Me.Label2.Text = "y1"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 109)
+        Me.Label1.Location = New System.Drawing.Point(10, 21)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(11, 12)
+        Me.Label1.Size = New System.Drawing.Size(17, 12)
         Me.Label1.TabIndex = 10
-        Me.Label1.Text = "x"
+        Me.Label1.Text = "x1"
         '
-        'Txtx
+        'Txtx1
         '
-        Me.Txtx.Location = New System.Drawing.Point(59, 106)
-        Me.Txtx.Name = "Txtx"
-        Me.Txtx.Size = New System.Drawing.Size(51, 19)
-        Me.Txtx.TabIndex = 9
-        Me.Txtx.Text = "0"
+        Me.Txtx1.Location = New System.Drawing.Point(33, 18)
+        Me.Txtx1.Name = "Txtx1"
+        Me.Txtx1.Size = New System.Drawing.Size(51, 19)
+        Me.Txtx1.TabIndex = 6
+        Me.Txtx1.Text = "0"
         '
         'Label3
         '
@@ -145,16 +151,16 @@ Partial Class Form1
         '
         'Txtheight
         '
-        Me.Txtheight.Location = New System.Drawing.Point(59, 181)
+        Me.Txtheight.Location = New System.Drawing.Point(128, 43)
         Me.Txtheight.Name = "Txtheight"
         Me.Txtheight.Size = New System.Drawing.Size(51, 19)
-        Me.Txtheight.TabIndex = 18
+        Me.Txtheight.TabIndex = 9
         Me.Txtheight.Text = "0"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(12, 184)
+        Me.Label5.Location = New System.Drawing.Point(90, 46)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(36, 12)
         Me.Label5.TabIndex = 17
@@ -163,7 +169,7 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(12, 159)
+        Me.Label6.Location = New System.Drawing.Point(90, 21)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(32, 12)
         Me.Label6.TabIndex = 16
@@ -171,16 +177,16 @@ Partial Class Form1
         '
         'Txtwidth
         '
-        Me.Txtwidth.Location = New System.Drawing.Point(59, 156)
+        Me.Txtwidth.Location = New System.Drawing.Point(128, 18)
         Me.Txtwidth.Name = "Txtwidth"
         Me.Txtwidth.Size = New System.Drawing.Size(51, 19)
-        Me.Txtwidth.TabIndex = 15
+        Me.Txtwidth.TabIndex = 8
         Me.Txtwidth.Text = "0"
         '
         'LblMsg
         '
         Me.LblMsg.AutoSize = True
-        Me.LblMsg.Location = New System.Drawing.Point(128, 131)
+        Me.LblMsg.Location = New System.Drawing.Point(15, 243)
         Me.LblMsg.Name = "LblMsg"
         Me.LblMsg.Size = New System.Drawing.Size(26, 12)
         Me.LblMsg.TabIndex = 19
@@ -200,7 +206,7 @@ Partial Class Form1
         Me.TxtSearchPattern.Location = New System.Drawing.Point(59, 31)
         Me.TxtSearchPattern.Name = "TxtSearchPattern"
         Me.TxtSearchPattern.Size = New System.Drawing.Size(82, 19)
-        Me.TxtSearchPattern.TabIndex = 20
+        Me.TxtSearchPattern.TabIndex = 2
         Me.TxtSearchPattern.Text = "*.jpg"
         '
         'Label8
@@ -217,7 +223,7 @@ Partial Class Form1
         Me.TxtAddNM.Location = New System.Drawing.Point(72, 81)
         Me.TxtAddNM.Name = "TxtAddNM"
         Me.TxtAddNM.Size = New System.Drawing.Size(82, 19)
-        Me.TxtAddNM.TabIndex = 22
+        Me.TxtAddNM.TabIndex = 5
         Me.TxtAddNM.Text = "Conv_"
         '
         'GroupBox1
@@ -226,12 +232,42 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.RbtR180)
         Me.GroupBox1.Controls.Add(Me.RbtR090)
         Me.GroupBox1.Controls.Add(Me.RbtR000)
-        Me.GroupBox1.Location = New System.Drawing.Point(160, 83)
+        Me.GroupBox1.Location = New System.Drawing.Point(14, 188)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(230, 42)
-        Me.GroupBox1.TabIndex = 24
+        Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Rotation"
+        '
+        'RbtR270
+        '
+        Me.RbtR270.AutoSize = True
+        Me.RbtR270.Location = New System.Drawing.Point(173, 18)
+        Me.RbtR270.Name = "RbtR270"
+        Me.RbtR270.Size = New System.Drawing.Size(53, 16)
+        Me.RbtR270.TabIndex = 3
+        Me.RbtR270.Text = "270°"
+        Me.RbtR270.UseVisualStyleBackColor = True
+        '
+        'RbtR180
+        '
+        Me.RbtR180.AutoSize = True
+        Me.RbtR180.Location = New System.Drawing.Point(114, 18)
+        Me.RbtR180.Name = "RbtR180"
+        Me.RbtR180.Size = New System.Drawing.Size(53, 16)
+        Me.RbtR180.TabIndex = 2
+        Me.RbtR180.Text = "180°"
+        Me.RbtR180.UseVisualStyleBackColor = True
+        '
+        'RbtR090
+        '
+        Me.RbtR090.AutoSize = True
+        Me.RbtR090.Location = New System.Drawing.Point(61, 18)
+        Me.RbtR090.Name = "RbtR090"
+        Me.RbtR090.Size = New System.Drawing.Size(47, 16)
+        Me.RbtR090.TabIndex = 1
+        Me.RbtR090.Text = "90°"
+        Me.RbtR090.UseVisualStyleBackColor = True
         '
         'RbtR000
         '
@@ -245,57 +281,75 @@ Partial Class Form1
         Me.RbtR000.Text = "None"
         Me.RbtR000.UseVisualStyleBackColor = True
         '
-        'RbtR090
+        'Txty2
         '
-        Me.RbtR090.AutoSize = True
-        Me.RbtR090.Location = New System.Drawing.Point(61, 18)
-        Me.RbtR090.Name = "RbtR090"
-        Me.RbtR090.Size = New System.Drawing.Size(47, 16)
-        Me.RbtR090.TabIndex = 1
-        Me.RbtR090.Text = "90°"
-        Me.RbtR090.UseVisualStyleBackColor = True
+        Me.Txty2.Location = New System.Drawing.Point(208, 43)
+        Me.Txty2.Name = "Txty2"
+        Me.Txty2.Size = New System.Drawing.Size(51, 19)
+        Me.Txty2.TabIndex = 11
+        Me.Txty2.Text = "0"
         '
-        'RbtR180
+        'Label9
         '
-        Me.RbtR180.AutoSize = True
-        Me.RbtR180.Location = New System.Drawing.Point(114, 18)
-        Me.RbtR180.Name = "RbtR180"
-        Me.RbtR180.Size = New System.Drawing.Size(53, 16)
-        Me.RbtR180.TabIndex = 2
-        Me.RbtR180.Text = "180°"
-        Me.RbtR180.UseVisualStyleBackColor = True
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(185, 46)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(17, 12)
+        Me.Label9.TabIndex = 27
+        Me.Label9.Text = "y2"
         '
-        'RbtR270
+        'Label10
         '
-        Me.RbtR270.AutoSize = True
-        Me.RbtR270.Location = New System.Drawing.Point(173, 18)
-        Me.RbtR270.Name = "RbtR270"
-        Me.RbtR270.Size = New System.Drawing.Size(53, 16)
-        Me.RbtR270.TabIndex = 3
-        Me.RbtR270.Text = "270°"
-        Me.RbtR270.UseVisualStyleBackColor = True
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(185, 21)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(17, 12)
+        Me.Label10.TabIndex = 26
+        Me.Label10.Text = "x2"
+        '
+        'Txtx2
+        '
+        Me.Txtx2.Location = New System.Drawing.Point(208, 18)
+        Me.Txtx2.Name = "Txtx2"
+        Me.Txtx2.Size = New System.Drawing.Size(51, 19)
+        Me.Txtx2.TabIndex = 10
+        Me.Txtx2.Text = "0"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Txtx1)
+        Me.GroupBox2.Controls.Add(Me.Txty2)
+        Me.GroupBox2.Controls.Add(Me.Label9)
+        Me.GroupBox2.Controls.Add(Me.Label1)
+        Me.GroupBox2.Controls.Add(Me.Label2)
+        Me.GroupBox2.Controls.Add(Me.Label10)
+        Me.GroupBox2.Controls.Add(Me.Txty1)
+        Me.GroupBox2.Controls.Add(Me.Txtheight)
+        Me.GroupBox2.Controls.Add(Me.Txtx2)
+        Me.GroupBox2.Controls.Add(Me.Label5)
+        Me.GroupBox2.Controls.Add(Me.Txtwidth)
+        Me.GroupBox2.Controls.Add(Me.Label6)
+        Me.GroupBox2.Location = New System.Drawing.Point(14, 106)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(279, 76)
+        Me.GroupBox2.TabIndex = 6
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Position"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(552, 227)
+        Me.ClientSize = New System.Drawing.Size(552, 291)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.TxtAddNM)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TxtSearchPattern)
         Me.Controls.Add(Me.LblMsg)
-        Me.Controls.Add(Me.Txtheight)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Txtwidth)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Txty)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Txtx)
         Me.Controls.Add(Me.FolderPathNameDST)
         Me.Controls.Add(Me.BtnSelectDST)
         Me.Controls.Add(Me.FolderPathNameSRC)
@@ -305,6 +359,8 @@ Partial Class Form1
         Me.Text = "ImageTrim"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -314,10 +370,10 @@ Partial Class Form1
     Friend WithEvents BtnSelectSRC As System.Windows.Forms.Button
     Friend WithEvents FolderPathNameDST As System.Windows.Forms.TextBox
     Friend WithEvents BtnSelectDST As System.Windows.Forms.Button
-    Friend WithEvents Txty As System.Windows.Forms.TextBox
+    Friend WithEvents Txty1 As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Txtx As System.Windows.Forms.TextBox
+    Friend WithEvents Txtx1 As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Txtheight As System.Windows.Forms.TextBox
@@ -334,5 +390,10 @@ Partial Class Form1
     Friend WithEvents RbtR180 As System.Windows.Forms.RadioButton
     Friend WithEvents RbtR090 As System.Windows.Forms.RadioButton
     Friend WithEvents RbtR000 As System.Windows.Forms.RadioButton
+    Friend WithEvents Txty2 As System.Windows.Forms.TextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Txtx2 As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
 
 End Class
