@@ -110,4 +110,18 @@ Public Class Form1
         End If
     End Function
 
+    Private Sub FolderPathNameSRC_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FolderPathNameSRC.TextChanged
+        Call FolderPathNameSRC_Copy()
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CheckBox1.CheckedChanged
+        Call FolderPathNameSRC_Copy()
+    End Sub
+
+    Private Sub FolderPathNameSRC_Copy()
+        If CheckBox1.Checked = True Then
+            FolderPathNameDST.Text = FolderPathNameSRC.Text
+        End If
+    End Sub
+
 End Class

@@ -52,6 +52,7 @@ Partial Class Form1
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Txtx2 = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -336,11 +337,22 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Position"
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(417, 34)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(52, 16)
+        Me.CheckBox1.TabIndex = 24
+        Me.CheckBox1.Text = "Same"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(552, 291)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label8)
@@ -395,5 +407,6 @@ Partial Class Form1
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Txtx2 As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
 
 End Class
