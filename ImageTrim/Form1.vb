@@ -124,4 +124,21 @@ Public Class Form1
         End If
     End Sub
 
+    'B5R→A5
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Txtx1.Text = 0
+        Txtwidth.Text = 1646
+        Txty1.Text = 130
+        Txtheight.Text = 1165
+        RbtR090.Checked = True
+    End Sub
+
+    'B5R→B6
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Txtx1.Text = 0
+        Txtwidth.Text = 1424
+        Txty1.Text = 208
+        Txtheight.Text = 1008
+        RbtR090.Checked = True
+    End Sub
 End Class
